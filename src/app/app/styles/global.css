@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    --main-color: oklch(0.718 0.202 349.761);
+    --font-roboto: "Roboto", sans-serif; 
+  }
+
+@layer base {
+  *{
+    @apply font-extralight;
+  }
+    h1 {
+        @apply text-5xl font-semibold;
+      }
+    li {
+      @apply hover:text-pink-400;
+    }
+
+}
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color: #ffffff;
+    color-scheme: light;
+    background-color: #000000;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  

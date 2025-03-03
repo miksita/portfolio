@@ -30,12 +30,12 @@ export default function Home() {
       <div className="pt-24 relative z-10">
         <h1 className="mb-6">I am Miksita</h1>
         <div className="flex space-x-10"> 
-          <div className='pt-2'>
+          <div className='pt-6 '>
             <EngRuButton />
           </div>
-          <h1 className="mb-16">Web-designer</h1>
+          <h1 className="mb-10 pl-16">Web-designer</h1>
         </div>
-        <p className="mb-10 max-w-xl">
+        <p className="mb-10 max-w-2xl">
           Hello! I am Miksita, a web developer and desigHello! I am Miksita, a web
           devereate beautiful and user-friendly websites.Hello! I am Miksita, a web
           developer and designer. I create

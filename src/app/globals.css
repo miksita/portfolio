@@ -6,7 +6,7 @@
   }
 
   h1 {
-    @apply text-6xl;
+    @apply text-8xl;
   }
 
   li {
@@ -36,8 +36,10 @@
 }
 
 h1 {
-  font-family: 'Anonymous Pro', monospace;
-  font-weight: 900;
+  font-family: 'Great Vibes';
+  font-weight: 500;
+  
+
 }
 .progress-bar {
   animation: progress 1s ease-in-out forwards;
@@ -45,13 +47,10 @@ h1 {
 
 @theme {
   --main-color: oklch(0.718 0.202 349.761);
-  --font-roboto: 'Anonymous Pro', monospace;
 }
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-
   color: #ffffff;
   color-scheme: light;
   background-color: #000000;

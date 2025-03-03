@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="px-2 w-7xl mx-auto">
       <link
-          href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
           rel="stylesheet"
         />
         <Header />

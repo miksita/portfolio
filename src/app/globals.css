@@ -10,7 +10,7 @@
   }
 
   li {
-    @apply hover:text-pink-400;
+    @apply hover:text-pink-300;
   }
 }
 /* @keyframes progress {
@@ -21,6 +21,19 @@
     width: var(--percentage);
   }
 } */
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--percentage);
+  }
+}
+
+.skill-bar-fill {
+  animation: fillBar 1.5s ease-out forwards;
+}
 
 h1 {
   font-family: 'Anonymous Pro', monospace;

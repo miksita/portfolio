@@ -1,6 +1,3 @@
-// export default function Page() {
-//   return <h1 className="text-3xl font-bold">Hello, Next.js!</h1>
-// }
 
 import Image from 'next/image';
 import About from '../pages/about/page';
@@ -16,13 +13,11 @@ export default function Page() {
     return (
       <>
         <Home />
-        <BottonBorder />
         <About />
         <BottonBorder />
         <Skills />
         <BottonBorder />
         <MyServises />
-        <BottonBorder />
         <Works />
         <BottonBorder />
         <Contacts />

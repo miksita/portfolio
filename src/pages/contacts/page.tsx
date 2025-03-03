@@ -1,18 +1,19 @@
-import {FaGithub, FaTelegram} from 'react-icons/fa';
+
+import { FaGithub, FaTelegram } from 'react-icons/fa';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import Link from 'next/link';
 
-
 export default function Contacts() {
   return (
-    <div className="pt-32">
+    <div className="pt-32 pb-16" id="contacts"> {/* Добавлен padding снизу */}
       <h1 className="text-center">Contacts</h1>
       <p className="mb-2 mt-4 text-center max-w-2xl mx-auto">
-  he ehheheeh heheheh ehehehe he ehheheeh heheheh eheheheh vhe ehhe heheheh eheheheh he ehheheeh heheheh ehehehehh
-</p>      <div className="flex items-center justify-center">
-        <div className="rounded-lg shadow-lg w-full flex">
+        he ehheheeh heheheh ehehehe he ehheheeh heheheh eheheheh vhe ehhe heheheh e
+      </p>
+      <div className="flex items-center justify-center">
+        <div className="rounded-lg w-full flex">
           {/* Левая часть: картинка */}
-          <div className="flex-1 flex items-center justify-center relative overflow-hidden">
+          <div className="flex-1 flex items-end justify-end relative overflow-hidden pr-4">
             <img
               src="/cat-gradient-contacts.png" // Замените на путь к вашей картинке
               alt="Изображение"
@@ -21,9 +22,8 @@ export default function Contacts() {
           </div>
 
           {/* Правая часть: список */}
-          <div className="flex-1 pt-6 mt-24 border-l border-gray-600 h-55"> 
-
-<ul className="space-y-10 pl-10 "> 
+          <div className="flex-1 pt-6 mt-24 border-l border-gray-600 h-55">
+            <ul className="space-y-10 pl-10">
               <li>
                 <Link
                   href="https://www.instagram.com/mihcita/"
@@ -40,10 +40,10 @@ export default function Contacts() {
                   href="https://www.instagram.com/mihcita/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-400 flex items-center space-x-4" 
+                  className="hover:text-pink-400 flex items-center space-x-4"
                 >
                   <MdOutlineAlternateEmail className="w-8 h-8" />
-                  <span>nemiksita@gmail.com</span> 
+                  <span>nemiksita@gmail.com</span>
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ export default function Contacts() {
                   href="https://www.instagram.com/mihcita/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-pink-400 flex items-center space-x-4" 
+                  className="hover:text-pink-400 flex items-center space-x-4"
                 >
                   <FaGithub className="w-8 h-8" />
                   <span>miksita</span>
@@ -63,5 +63,4 @@ export default function Contacts() {
       </div>
     </div>
   );
-};
-
+}

@@ -4,7 +4,8 @@ import AboutInfo from '@/app/components/AboutInfo';
 export default function About() {
   return (
     <div>
-      <div className="flex py-32">
+      
+      <div className="flex pb-32 pt-48">
         {/* Левая часть */}
         <div className="w-1/2 pr-14">
           <h1 className="mb-6">About me</h1>

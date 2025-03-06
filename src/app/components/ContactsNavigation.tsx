@@ -1,36 +1,29 @@
-'use client'
-import React from 'react';
-import { useRouter } from 'next/router';
+'use client';
 
-const ContactsNavigation: React.FC = () => {
-    const router = useRouter();
+import { useRouter } from 'next/navigation';
 
-    const scrollToElement = (id: string) => {
-      const element = document.getElementById(id);
+interface ContactsNavigationProps {
+  children: React.ReactNode;
+}
+
+const ContactsNavigation: React.FC<ContactsNavigationProps> = ({ children }) => {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push('/'); // Переход на главную страницу
+    setTimeout(() => {
+      const element = document.getElementById('contacts');
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' }); // Плавная прокрутка
+        element.scrollIntoView({ behavior: 'smooth' });
       }
-    };
-  
-    const handleContactsClick = () => {
-      if (router.pathname !== '/') {
-        // Если текущая страница не главная, переходим на главную
-        router.push('/').then(() => {
-          // После перехода прокручиваем до раздела "Contacts"
-          setTimeout(() => scrollToElement('contacts'), 100); // Небольшая задержка для загрузки страницы
-        });
-      } else {
-        // Если уже на главной странице, просто прокручиваем
-        scrollToElement('contacts');
-      }
-    };
-
+    }, 100); // Задержка для корректного скролла
+  };
 
   return (
-    <button onClick={handleContactsClick} className="hover:text-pink-400">
-    Contacts
-  </button>
+    <>
+      <div onClick={handleButtonClick}>{children}</div>
+    </>
   );
-}
+};
 
 export default ContactsNavigation;

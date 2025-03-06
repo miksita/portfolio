@@ -4,8 +4,16 @@ import Image from 'next/image';
 import WhiteButton from '@/app/components/WhiteButton';
 import WhiteBorderButton from '@/app/components/WhiteBorderButton';
 import EngRuButton from '@/app/components/EngRuButton';
+import { HOME_PAGE_TEXT } from "@/constants/text";
+
+// import { useTranslation } from 'next-i18next';
+
 
 export default function Home() {
+
+    const t = HOME_PAGE_TEXT;
+
+  // const { t } = useTranslation('common');
   
   const scrollToElement = (id: string) => {
     const element = document.getElementById(id);
@@ -26,20 +34,21 @@ export default function Home() {
           className="object-cover"
         />
       </div>
+      
     
       <div className="pt-24 relative z-10">
-        <h1 className="mb-6">I am Miksita</h1>
+        <h1 className="mb-6">{t.title_first}</h1>
+
+        {/* <h1>{t('welcome')}</h1>
+        <p>{t('description')}</p> */}
+
         <div className="flex space-x-10"> 
           <div className='pt-6 '>
             <EngRuButton />
           </div>
-          <h1 className="mb-10 pl-16">Web-designer</h1>
+          <h1 className="mb-10 pl-16">{t.title_second}</h1>
         </div>
-        <p className="mb-10 max-w-2xl">
-          Hello! I am Miksita, a web developer and desigHello! I am Miksita, a web
-          devereate beautiful and user-friendly websites.Hello! I am Miksita, a web
-          developer and designer. I create
-        </p>
+        <p className="mb-10 max-w-2xl">{t.description}</p>
         <div className="flex space-x-4"> 
 
           <a href="https://t.me/miksita" target="_blank" rel="noopener noreferrer">

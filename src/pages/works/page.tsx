@@ -2,8 +2,12 @@
 import React from 'react';
 import WhiteButton from '@/app/components/WhiteButton';
 import Image from 'next/image';
+import { WORKS_PAGE_TEXT } from '@/constants/text';
 
 const WorksPage: React.FC = () => {
+
+  const t = WORKS_PAGE_TEXT;
+
   return (
     <div className="py-32 relative" id='works'>
 
@@ -21,8 +25,8 @@ const WorksPage: React.FC = () => {
 
       {/* Контент */}
       <div className="relative z-10 container mx-auto">
-        <h1 className="">Works</h1>
-        <p className="mb-14 mt-4">I can give u a lot of servives, whih you wonna heheheheh</p>
+        <h1 className="">{t.title}</h1>
+        <p className="mb-14 mt-4">{t.description}</p>
 
         {/* Первый отсек */}
         <div className="flex flex-row items-center my-8 mt-20">
@@ -30,8 +34,8 @@ const WorksPage: React.FC = () => {
           <div className="w-96 h-48 bg-zinc-900 rounded-2xl mr-8"></div>
           {/* Текст и кнопка */}
           <div className="flex flex-col">
-            <h2 className="text-xl font-semibold mb-4">Made a lending</h2>
-            <p className="mb-4 max-w-xl">I can give u a lot of servives, whih you wonna heheheheh mdbfjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+            <h2 className="text-xl font-semibold mb-4">{t.works.first.title}</h2>
+            <p className="mb-4 max-w-xl">{t.works.first.description}</p>
             <WhiteButton className="w-fit">See</WhiteButton>
           </div>
         </div>
@@ -43,8 +47,8 @@ const WorksPage: React.FC = () => {
           <div className="w-96 h-48 bg-zinc-900 rounded-2xl mr-8"></div>
           {/* Текст и кнопка */}
           <div className="flex flex-col">
-            <h2 className="text-xl font-semibold mb-4">Made a lending</h2>
-            <p className="mb-4 max-w-xl">I can give u a lot of servives, whih you wonna heheheheh mdbfjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+            <h2 className="text-xl font-semibold mb-4">{t.works.second.title}</h2>
+            <p className="mb-4 max-w-xl">{t.works.second.description}</p>
             <WhiteButton className="w-fit">See</WhiteButton>
           </div>
         </div>
@@ -56,8 +60,8 @@ const WorksPage: React.FC = () => {
           <div className="w-96 h-48 bg-zinc-900 rounded-2xl mr-8"></div>
           {/* Текст и кнопка */}
           <div className="flex flex-col">
-            <h2 className="text-xl font-semibold mb-4">Made a lending</h2>
-            <p className="mb-4 max-w-xl">I can give u a lot of servives, whih you wonna heheheheh mdbfjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+            <h2 className="text-xl font-semibold mb-4">{t.works.third.title}</h2>
+            <p className="mb-4 max-w-xl">{t.works.third.description}</p>
             <WhiteButton className="w-fit">See</WhiteButton>
           </div>
         </div>

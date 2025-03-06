@@ -2,10 +2,11 @@
 import Link from 'next/link';
 import { FaInstagram, FaGithub, FaTelegram } from 'react-icons/fa';
 import BottonBorder from './BottonBorder';
-// import ContactsNavigation from './ContactsNavigation';
+import ContactsNavigation from './ContactsNavigation';
+import { HEADER_TEXT } from '@/constants/text';
 
 export default function Header() {
-
+  const t = HEADER_TEXT;
      const scrollToElement = (id: string) => {
        const element = document.getElementById(id);
        if (element) {
@@ -18,10 +19,10 @@ export default function Header() {
       <div className="container mx-auto flex justify-between">
         <nav>
           <ul className="flex space-x-10">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/servises">Servises</Link></li>
-            <li><Link href="/resume">Resume</Link></li>
-            <li onClick={() => scrollToElement('contacts')}>Contacts</li>
+            <li><Link href="/">{t.home}</Link></li>
+            <li><Link href="/servises">{t.servises}</Link></li>
+            <li><Link href="/resume">{t.resume}</Link></li>
+            <li><ContactsNavigation>{t.contacts}</ContactsNavigation></li>
           </ul>
 
         </nav>
@@ -53,7 +54,6 @@ export default function Header() {
         </nav>
       </div>
       <BottonBorder />
-    
     </header>
   );
 };

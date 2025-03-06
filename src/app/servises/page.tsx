@@ -1,57 +1,48 @@
 import WhiteButton from "../components/WhiteButton"
 import BottonBorder from "../components/BottonBorder"
+import { SERVISES_PAGE_TEXT } from "@/constants/text"
 
 export default function Servises() {
+    const t = SERVISES_PAGE_TEXT;
     return (
         <>
-            <div className="pt-6 pb-32 relative" id='works'>
-                <div className="relative z-10 container mx-auto">
-
+            <div className="pt-6 pb-32 relative">
+                <div className="relative z-10 container mx-auto" id="servises-first">
                     {/* Первый отсек */}
                     <div className="flex flex-row items-center my-8 pb-16">
                         {/* Текст и кнопка */}
                         <div className="flex flex-col">
                             <h3 className="font-extralight text-4xl text-zinc-500 mb-4">/01</h3>
-                            <h1 className="mb-4">Made a lending</h1>
-                            <p className="mb-4 max-w-2xl">I can give u a lot of servives, whih you wonna heheheheh mdbоиаоуц ауиц арцоу арцо аорораивиавром тм равомииав fjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+                            <h4 className="mb-4">{t.servises.first.title}</h4>
+                            <p className="mb-4 max-w-2xl">{t.servises.first.description.full}</p>
                             <ul className="mb-10">
-                                <li>dfkemfkвыывsemf</li>
-                                <li>dfkemвмаываывавмfksemf</li>
-                                <li>dfkemfksemf</li>
+                                {/* придумать что вставить */}
                             </ul>
                             <WhiteButton>Order</WhiteButton>
                         </div>
                     </div>
                     <BottonBorder />
-
-
-                    <div className="flex flex-row items-center my-8 pb-16">
+                    <div className="flex flex-row items-center my-8 pb-16" id="servises-second">
                         {/* Текст и кнопка */}
                         <div className="flex flex-col">
                             <h3 className="font-extralight text-4xl text-zinc-500 mb-4">/02</h3>
-                            <h1 className="mb-4">Made a blabla</h1>
-                            <p className="mb-4 max-w-2xl">I can give u a lot of servives, whih you wonna heheheheh mdbfjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+                            <h4 className="mb-4">{t.servises.second.title}</h4>
+                            <p className="mb-4 max-w-2xl">{t.servises.second.description.full}</p>
                             <ul className="mb-10">
-                                <li>dfkemfksemf</li>
-                                <li>dfkemfksemf</li>
-                                <li>dfkemfksemf</li>
+                                {/* придумать что вставить */}
                             </ul>
                             <WhiteButton>Order</WhiteButton>
                         </div>
                     </div>
                     <BottonBorder />
-
-
-                    <div className="flex flex-row items-center my-8">
+                    <div className="flex flex-row items-center my-8 pb-16" id="servises-third">
                         {/* Текст и кнопка */}
                         <div className="flex flex-col">
                             <h3 className="font-extralight text-4xl text-zinc-500 mb-4">/03</h3>
-                            <h1 className="mb-4">Made a lending</h1>
-                            <p className="mb-4 max-w-2xl">I can give u a lot of servives, whih yo ывт мио вымрвыи мивымивым рвыом выромырвом выомырвм рвыом рвыим рu wonna heheheheh mdbfjhsdbf nfdvjhs fhgsavfdbsadysdhgvsad bvsa</p>
+                            <h4 className="mb-4">{t.servises.third.title}</h4>
+                            <p className="mb-4 max-w-2xl">{t.servises.third.description.full}</p>
                             <ul className="mb-10">
-                                <li>dfkemfksemf</li>
-                                <li>dfkemfksemf</li>
-                                <li>dfkemfksemf</li>
+                               {/* придумать что вставить */}
                             </ul>
                             <WhiteButton>Order</WhiteButton>
                         </div>

@@ -1,27 +1,30 @@
+import { useState } from 'react';
 
-'use client'
-import React, { useState } from 'react';
+interface Props {
+  // toggle: () => void; // Функция для переключения языков
+}
 
-const ToggleButton: React.FC = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggle = () => {
-    setIsActive(!isActive); // Переключение состояния
-  };
+const LanguageSwitchButton = () => {
+  const [isEng, setIsEng] = useState(false); // Состояние для переключения языков
 
   return (
     <button
-      onClick={toggle}
-      className="relative w-20 h-10  bg-zinc-700  rounded-full p-1 transition-colors duration-300 hover:bg-gray-400 focus:outline-none"
+      onClick={() => {
+        // toggle(); // Вызываем функцию переключения языков
+        setIsEng(prev => !prev); // Меняем локальное состояние кнопки
+      }}
+      className="relative w-33 h-10 bg-black border-gray-300 border-1 rounded-full p-1 transition-colors duration-300 "
     >
-      {/* Внутренний кружок */}
+      {/* Внутренний кружок с текстом */}
       <div
-        className={`absolute top-1 left-1 w-8 h-8 bg-gray-300 rounded-full shadow-md transform transition-transform duration-300  ${
-          isActive ? 'translate-x-10' : 'translate-x-0'
+        className={`absolute top-0 left-0 w-18 h-10 bg-white rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center text-black ${
+          isEng ? 'translate-x-15' : 'translate-x-0'
         }`}
-      ></div>
+      >
+        <span className="text-base font-normal">{isEng ? 'ENG' : 'RU'}</span>
+      </div>
     </button>
   );
 };
 
-export default ToggleButton;
+export default LanguageSwitchButton;

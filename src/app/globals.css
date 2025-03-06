@@ -8,7 +8,9 @@
   h1 {
     @apply text-8xl;
   }
-
+  h4 {
+    @apply text-5xl;
+  }
   li {
     @apply hover:text-pink-300;
   }
@@ -36,6 +38,13 @@
 }
 
 h1 {
+  font-family: 'Great Vibes';
+  font-weight: 500;
+  
+
+}
+
+h4 {
   font-family: 'Great Vibes';
   font-weight: 500;
   

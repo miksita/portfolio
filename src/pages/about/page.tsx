@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import AboutInfo from '@/app/components/AboutInfo';
+import { ABOUT_PAGE_TEXT } from '@/constants/text';
 
 export default function About() {
+
+  const t = ABOUT_PAGE_TEXT;
+
   return (
     <div>
       
       <div className="flex pb-32 pt-48">
         {/* Левая часть */}
         <div className="w-1/2 pr-14">
-          <h1 className="mb-6">About me</h1>
-          <p className="mb-10 font-extralight">Hello! I am Miksita, a web developer and designer. I create beautiful and user-friendly websites.</p>
+          <h1 className="mb-6">{t.title}</h1>
+          <p className="mb-10 font-extralight">{t.description}</p>
           <AboutInfo />
         </div>
 
@@ -24,9 +28,9 @@ export default function About() {
 
           {/* Текст справа от линии */}
           <div className="ml-8">
-            <p className="mb-8 font-extralight">Hello! I am Miksita, a web developer and designer. I create beautiful and user-friendly websites.</p>
-            <p className="mb-14 font-extralight">Hello! I am Miksita, a web dsjdjahsdugwahsu designer designer designer v d yg  aw uyde</p>
-            <p className="mb-6 font-extralight">Hello! I am Miksita, a web developer and designer. I create </p>
+            <p className="mb-8 font-extralight">{t.point_first}</p>
+            <p className="mb-14 font-extralight">{t.point_second}</p>
+            <p className="mb-6 font-extralight">{t.point_third}</p>
           </div>
         </div>
       </div>
